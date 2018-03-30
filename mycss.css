@@ -128,6 +128,8 @@ ul{list-style: none;}
     height: 170px;
     width: 1080px;
     background-color: white;
+    position: absolute;
+    bottom: 210px;
 }
 .foot>ul{
     width: 1080px;
