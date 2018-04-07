@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>添加手环</title>
+    <title>登陆</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/css/zui.min.css">
     <!-- MZUI CSS 文件 -->
     <link href="/dist/css/mzui.min.css" rel="stylesheet">
@@ -12,25 +12,7 @@
     <link href="all.css" rel="stylesheet"> 
       
 <style type="text/css">
-    span {color:#f1eeee}
-    .tian2{
-        position: relative;
-    }
-    .tian2 li:nth-child(1){
-        position: absolute;
-        top: 350px;
-        left: 100px;
-    }
-    .tian2 li:nth-child(2){
-        position: absolute;
-        top: 350px;
-        right: 100px;
-    } 
-    .tian2 li:nth-child(3){
-        position: absolute;
-        top: 840px;
-        left: 455px;
-    } 
+    span {color:#e8e7e7}
 </style>
       
       
@@ -43,23 +25,29 @@
     <div class="all">
       
       <div class="head"><img src="/images/01.png" alt="电量标栏"></div>
-      <div class="tian">
-          <div class="tian1"></div>
-          <div class="tian2">
-              <ul>
-                  <li><img src="/icons/paizhao.png" width="400"></li>
-                  <li><img src="/icons/tianjia.png" width="400"></li>
-                  <li><img src="/icons/guanbi.png"></li>
-              </ul>
-          </div>
-        </div>
-        
-        
+      
+<div class="col-md-10 denglu">
+      <div class="input-control has-icon-left dengli1">
+        <input id="inputAccountExample1" type="text" class="form-control" placeholder="用户名">
+        <label for="inputAccountExample1" class="input-control-icon-left"><i class="icon icon-user denglu11"></i></label>
+      </div>
+      <br>
+    
+      <div class="input-control has-icon-left has-icon-right denglu2">
+        <input id="inputEmailExample1" type="email" class="form-control" placeholder="密码">
+        <label for="inputEmailExample1" class="input-control-icon-left"><i class="icon icon-key denglu21"></i></label>
+        <label for="inputEmailExample1" class="input-control-icon-right"><i class="icon icon-check denglu22"></i></label>
+      </div>
+      <br>
+       <div class="col-md-12 denglu3"><button class="btn btn-block  " type="button">登陆</button></div>
+    
+    
+     <a href="bzhu.html" class="denglu4">没有账号？立即注册 ></a>
+    </div>
+
 
         
-        
-        
-        
+
 
        
          

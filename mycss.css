@@ -29,12 +29,12 @@ ul{list-style: none;}
     height: 719px;
     width: 1017px;
 /*    background-color: white;*/
-    margin: 28px;
+    margin: 20px 28px 20px 30px;
     position: relative;
 }
 .sec21{
     height: 182px;
-    width: 1017px;
+    width: 1018px;
     background-color: white;
     border:2px solid white;
     border-radius:25px;
@@ -42,7 +42,7 @@ ul{list-style: none;}
     position: relative;
 }
 .sec21>form>div{
-    padding-left: 0px;
+    padding-left: 50px;
 }
 .sec21>form>.sec211,.sec212{
     float: right;
@@ -59,14 +59,14 @@ ul{list-style: none;}
 */
     position: absolute;
     top: 65px;
-    left: 220px;
+    right: 0px;
 }
 .sec22{
     height: 511px;
     width: 326px;
     background-color: white;
     position: absolute;
-    top: 205px;
+    top: 200px;
 }
 .sec22>ul{
     padding-left: 95px;
@@ -83,8 +83,8 @@ ul{list-style: none;}
     background-color: white;
     margin-left: 16px;
     position: absolute;
-    top: 205px;
-    left: 329px;
+    top: 200px;
+    left: 330px;
 }
 .sec23>ul{
     padding-left: 95px;
@@ -101,8 +101,8 @@ ul{list-style: none;}
     background-color: white;
     margin-left: 16px;
     position: absolute;
-    top: 205px;
-    left: 670px;
+    top: 200px;
+    left: 671px;
 }
 .sec24>ul{
     padding-left: 95px;
@@ -129,7 +129,7 @@ ul{list-style: none;}
     width: 1080px;
     background-color: white;
     position: absolute;
-    bottom: 210px;
+    bottom: 230px;
 }
 .foot>ul{
     width: 1080px;
