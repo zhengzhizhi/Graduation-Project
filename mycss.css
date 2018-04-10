@@ -4,13 +4,13 @@ ul{list-style: none;}
 
 .all{
     height: 1920px;
-    width: 1080px;
+    width: 100%;
     background-color: #e5e2e2;    
 }
 
 .sec1{
     height: 917px;
-    width: 1080px;
+    width: 100%px;
     background-color: #7bca67;
 }
 .btn-link:hover{
@@ -27,7 +27,7 @@ ul{list-style: none;}
 
 .sec2{
     height: 719px;
-    width: 1017px;
+    width: 100%;
 /*    background-color: white;*/
     margin: 20px 28px 20px 30px;
     position: relative;

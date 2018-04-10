@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.mobile.all.min.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    
+</head>
+    <script type="text/javascript">  
+       function isLeapYear(){ 
+			var	number =11   ;
+						//取用户名和密码
+			var u1 = $("#username").val();//取输入的用户名
+			var p1 = $("#password").val();//取输入的密码
+			alert("user:"+u1);
+			alert("user:"+p1);
+			
+			window.location.href="index.html";//js跳转页面，要记住。
+
+			//调ajax
+			$.ajax({            
+				url:"dengluchuli.php",
+				data:{"u":u,"p":p},//第二个u和p只是变量，可以随意写，dengluchuli.php里面的u和p都是第一个。
+				type:"POST",
+				dataType:"TEXT",
+				success: function(data){
+						alert('OK'+data);
+
+						if(data.trim()=="OK")//要加上去空格，防止内容里面有空格引起错误。
+						{
+							window.location.href="index.html";//js跳转页面，要记住。
+						}
+						else
+						{
+							echo("用户名或密码错误");
+						}
+				
+					},
+					error : function(request, errinfo, errobject) {
+						//添加失败，继续添加
+						alert('抢单失败！'+errinfo);
+
+					}
+				
+				});
+			
+
+        } 
+
+		   
+		   
+    </script> 
+<body>
+<!-- <div data-role="view" data-title="Camera App" id="view-transitions" data-persist="true" data-use-native-scrolling="true">
+  <h1 class="app-logo">  <img style="width:60%;text-align:center" src="images/xiaohui.png"/> </h1>
+    <div class="action-buttons">
+        <a style="background:#0088cc;border-color:#0088cc" href="#view-transitions-login" class="km-justified km-primary" data-role="button" class="transitions-button">登录</a>
+    </div>
+    
+</div>
+-->
+
+<div data-role="view" data-title="Login/Sign-up" id="view-transitions-login" data-transition="overlay:up" data-persist="true" data-use-native-scrolling="true">
+     <h1 class="app-logo">  <img style="width:60%;text-align:center" src="images/xiaohui3.png"/> </h1>
+   <div style="margin-left:30px;margin-right:30px;"> <ul data-role="listview" data-style="inset">
+        <li><label for="username">用户名: <input  type="text" id="username" /></label></li>
+        <li><label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码: <input type="password" id="password" /></label></li>
+    </ul>
+    
+    <div class="action-buttons" >
+        <a  style="background:#0088cc;border-color:#0088cc" onclick="isLeapYear()" data-transition="overlay:down reverse" data-role="button" class="km-primary km-justified transitions-button" >登&nbsp;&nbsp;&nbsp;&nbsp;录</a><br />
+     <!--   <a href="#view-transitions" data-transition="overlay:up reverse" data-role="button" class="km-justified transitions-cancel">取消</a> -->  
+  
+    </div>
+    </div>
+</div>
+
+<!-- <div data-role="view" data-title="Welcome" id="view-transitions-welcome" data-persist="true" data-use-native-scrolling="true">
+    <h1 class="app-logo">登录成功</h1>
+    <div class="action-buttons">
+        <a data-role="button" class="km-justified" href="#view-transitions" data-transition="slide:right" class="transitions-button">退出</a>
+    </div>
+</div> -->
+
+<style type="text/css" media="screen">
+h1.app-logo {
+    margin: 1em 0  0.5em;
+    font-size: 3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: .9em;
+}
+.action-buttons {
+    margin: 1em;
+}
+#view-transitions-login .km-back {
+    display: none;
+}
+</style>
+
+
+<script>
+   var app = new kendo.mobile.Application(document.body, { skin: "nova" });
+</script>
+</body>
+</html>
