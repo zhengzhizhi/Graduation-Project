@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>主页今日</title>
+    <title>添加手环</title>
 <!--
     <link rel="icon" href="icons/sun.png">
     <link href="dist/css/mzui.min.css" rel="stylesheet">
@@ -14,31 +14,63 @@
   
   <link href="mycss/index.css" rel="stylesheet">
   <link rel="stylesheet" href="mycss/yundong.css">
-  <link rel="stylesheet" href="mycss/liuguang.css"> 
+  <link rel="stylesheet" href="mycss/shouhuan.css">
+
+  <link rel="stylesheet" href="mycss/onoff.css">
+<script src="jquery-3.3.1.js"></script>
 <!-- <script src="js/prefixfree.min.js"></script>-->
-<script type="text/javascript" src="//api.map.baidu.com/api?ak=sYysMz7602kw38WdBz8FRs9dOm6AMq5B&type=lite&v=1.0"></script>
+
 </head>
 
 <body>
  
   <div class='titleyundong'>
 <!--  <img src="icons/gfankui.png" alt="返回" width="20px"> -->
-  <span>开始运动</span>
+  <span>添加手环</span>
 </div>
   
   
-<!--
-   <div class="container-fuild yun1 ">
-
-     <img src="icons/yundong.png" alt="" width="150px;">
+   <div class="container-fuild zhongjian1 ">
+     <div class="radar"></div>
    </div>
--->
-<div id="container"></div>
-<!--
-<div class="kaishiyundong">
-    <img src="icons/yundong.png" alt="" width="130px">
-</div>   
--->
+    <div class="shouhuanmianban">
+       &nbsp;
+        <h2>当前范围内手环设备</h2>
+        
+            <div class="liebiao">
+        <ul>
+            <li class="lielie1">
+                <span>F5GVPPJAJC6C</span>
+                <input type="checkbox" id="xuanding1">
+                    
+                    <label for="xuanding1">
+                        <div class="tuoyuan">
+                            <div class="yuan"></div>
+                        </div>
+                    </label>
+                
+                    
+            </li>
+            <li class="lielie2">
+                <span>F8GVAPPJC6A</span>
+                <input type="checkbox" id="xuanding2">
+                    
+                    <label for="xuanding2">
+                        <div class="tuoyuan">
+                            <div class="yuan"></div>
+                        </div>
+                    </label>
+                
+                    
+            </li>
+            
+        </ul>
+       
+        
+    </div>
+
+    </div>
+   
    
 
    
@@ -58,13 +90,13 @@
         </a>
       </li>
       <li>
-        <a class='active' href="yundong3.html">
-          <span><img src="icons/g2.png" width="22px"></span>
+        <a href="yundong3.html">
+          <span><img src="icons/h2.png" width="22px"></span>
           <span>运动</span>
         </a>
       </li>
       <li>
-        <a href="shouhuan4.html">
+        <a class='active' href="shouhuan4.html">
           <span><img src="icons/add.png" width="22px"></span>
           <span>手环</span>
         </a>
@@ -107,19 +139,3 @@
 </body>
 
 </html>
-
-
-<script type="text/javascript">
-var map = new BMap.Map('container');
-// 创建地图实例
-var point = new BMap.Point(116.404, 39.915);
-// 创建点坐标
-map.centerAndZoom(point, 11);
-// 初始化地图， 设置中心点坐标和地图级别
-var zoomCtrl = new BMap.ZoomControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, offset: new BMap.Size(20, 20)});
-map.addControl(zoomCtrl);
-//缩放地图控件
-var marker = new BMap.Marker(point);
-map.addOverlay(marker);    
-//当前位置小红点   
-</script>

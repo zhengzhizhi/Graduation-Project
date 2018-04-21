@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>主页今日</title>
+    <title>个人中心</title>
 <!--
     <link rel="icon" href="icons/sun.png">
     <link href="dist/css/mzui.min.css" rel="stylesheet">
@@ -14,31 +14,36 @@
   
   <link href="mycss/index.css" rel="stylesheet">
   <link rel="stylesheet" href="mycss/yundong.css">
-  <link rel="stylesheet" href="mycss/liuguang.css"> 
+  <link rel="stylesheet" href="mycss/wode.css">
 <!-- <script src="js/prefixfree.min.js"></script>-->
-<script type="text/javascript" src="//api.map.baidu.com/api?ak=sYysMz7602kw38WdBz8FRs9dOm6AMq5B&type=lite&v=1.0"></script>
+
 </head>
 
 <body>
  
   <div class='titleyundong'>
 <!--  <img src="icons/gfankui.png" alt="返回" width="20px"> -->
-  <span>开始运动</span>
+  <span>我的</span>
 </div>
   
   
-<!--
-   <div class="container-fuild yun1 ">
-
-     <img src="icons/yundong.png" alt="" width="150px;">
+   <div class="container-fuild wode1 ">
+<!--     <div class="radar"></div>-->
+   <img src="icons/touxiang.png" alt="" width="90">
+   <p>123</p>
+   <div class="wode11">
+       <ul>
+           <li><a href="wode6-1.html"><img src="icons/6.1.png" alt="" width="15px"><p>个人设置</p><img src="icons/gjinru.png" alt="" width="15px"></a></li>
+           <li><a href="wode6-2.html"><img src="icons/6.2.png" alt="" width="15px"><p>我的好友</p><img src="icons/gjinru.png" alt="" width="15px"></a></li>
+           <li><a href="wode6-3.html"><img src="icons/6.3.png" alt="" width="15px"><p>手环管理</p><img src="icons/gjinru.png" alt="" width="15px"></a></li>
+           <li><a href="wode6-4.html"><img src="icons/6.4.png" alt="" width="15px"><p>意见反馈</p><img src="icons/gjinru.png" alt="" width="15px"></a></li>
+           <li><a href="wode6-5.html"><img src="icons/6.5.png" alt="" width="15px"><p>操作指南</p><img src="icons/gjinru.png" alt="" width="15px"></a></li>
+       </ul>
    </div>
--->
-<div id="container"></div>
-<!--
-<div class="kaishiyundong">
-    <img src="icons/yundong.png" alt="" width="130px">
-</div>   
--->
+    </div>
+
+   
+   
    
 
    
@@ -58,8 +63,8 @@
         </a>
       </li>
       <li>
-        <a class='active' href="yundong3.html">
-          <span><img src="icons/g2.png" width="22px"></span>
+        <a href="yundong3.html">
+          <span><img src="icons/h2.png" width="22px"></span>
           <span>运动</span>
         </a>
       </li>
@@ -76,8 +81,8 @@
         </a>
       </li>
       <li>
-        <a href="wode6.html">
-          <span><img src="icons/h4.png" width="22px"></span>
+        <a class='active' href="wode6.html">
+          <span><img src="icons/g4.png" width="22px"></span>
           <span>我的</span>
         </a>
       </li>
@@ -107,19 +112,3 @@
 </body>
 
 </html>
-
-
-<script type="text/javascript">
-var map = new BMap.Map('container');
-// 创建地图实例
-var point = new BMap.Point(116.404, 39.915);
-// 创建点坐标
-map.centerAndZoom(point, 11);
-// 初始化地图， 设置中心点坐标和地图级别
-var zoomCtrl = new BMap.ZoomControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, offset: new BMap.Size(20, 20)});
-map.addControl(zoomCtrl);
-//缩放地图控件
-var marker = new BMap.Marker(point);
-map.addOverlay(marker);    
-//当前位置小红点   
-</script>
