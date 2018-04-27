@@ -1,0 +1,80 @@
+
+
+
+  .liebiao ul{
+  	padding-left: 20px;
+  	padding-right: 20px;
+
+  }
+ .liebiao  li {
+  	border-bottom: 1px #EEEEEE solid;
+  	height:50px;
+    width: 100%;
+  }
+  .liebiao li:after{
+  	content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+  }
+  .liebiao label{
+  	display: block;
+  	height:50px;
+    width: 100%  
+  }
+ .liebiao  #xuanding1,#xuanding2{
+  	border: 0px;
+    background: none;
+    display: none;
+  }
+.shouhuanmianban{
+    position: relative;
+}
+.liebiao .lielie1 span{
+    position: absolute;
+    top: 10px;
+}
+.liebiao .lielie2 span{
+    position: absolute;
+    top: 60px;
+}
+  .liebiao span{
+  	height:20px;
+  	width: 100px;
+  	color:dimgrey;
+      
+  	font-size: 15px;
+  	line-height: 100px;
+  	display: block;
+  	float: left;
+  }
+  .liebiao .tuoyuan{
+  	height: 20px;
+  	width: 40px;
+  	border-radius: 30px;
+  	background-color: darkgrey;
+  	position: relative;
+  	float: right;
+  	margin-top: 20px;
+
+
+  }
+  .liebiao .yuan{
+  	height: 20px;
+  	width: 20px;
+  	border-radius: 25px;
+  	background-color: white;
+  	position: absolute;
+  	left: 1px;
+  }
+  input[type="checkbox"]:checked + label{
+  }
+  input[type="checkbox"]:checked + label .tuoyuan{
+  	background-color: #5db048;
+  }
+  input[type="checkbox"]:checked + label .tuoyuan .yuan{
+  	left:19px;
+  }
+}

@@ -6,7 +6,7 @@ a:hover{
 }
 .wode1{
     text-align: center;
-    height: 525px;
+    height: 685px;
 /*    background-color: white;*/
 /*    border: 1px solid #7dca67;*/
     border-radius: 3%;
@@ -21,27 +21,42 @@ a:hover{
     font-size: 15px;
     margin: 7px;
 }
-.wode11{
-    padding-top: 40px;
+.wode1-2{
+        background-color: #ccc;
+        height: 40px;
+}
+.wode1-2 p{
+
+    font-size: 20px;
+    height: 30px;
+    padding-top: 10px;
+}
+.wode1-1{
+    padding-top: 10px;
     position: relative;
 }
-.wode11 li{
+.wode1-1 li{
     height: 30px;
     font-size: 15px;
     border-bottom: 1px solid #EEEEEE;
     margin-top: 25px;
 } 
-.wode11 li p{
+.wode1-1 li p:nth-child(2){
     position: absolute;
     left: 40px;
     display: inline-block;
 }
-.wode11 li img:nth-child(1){
+.wode1-1 li p:nth-child(4){
+    position: absolute;
+    right: 30px;
+    display: inline-block;
+}
+.wode1-1 li img:nth-child(1){
     margin-top:5px;
     margin-left: 15px;
     float: left;
 }
-.wode11 li img:nth-child(3){
+.wode1-1 li img:nth-child(3){
     margin-top:5px;
     margin-right: 15px;
     float: right;

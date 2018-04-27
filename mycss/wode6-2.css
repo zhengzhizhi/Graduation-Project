@@ -1,0 +1,54 @@
+a{
+    color: dimgrey;
+}
+a:hover{
+    color: #5db048;
+}
+.wode1{
+    text-align: center;
+    height: 585px;
+/*    background-color: white;*/
+/*    border: 1px solid #7dca67;*/
+    border-radius: 3%;
+    margin: 10px;
+    position: relative;
+}
+.wode1 img{
+    margin-top: 30px;
+}
+/*
+.wode1 p{
+    color: dimgrey;
+    font-size: 15px;
+    margin: 7px;
+    text-align: left;
+}
+*/
+.wode1-2 input{
+        background-color: #ccc;
+        height: 40px;
+        border: 1px solid #5db048;
+        border-radius: 7%;
+    width: 100%;
+    font-size: 20px;
+    
+    text-align: center;
+}
+.wode1-2 #search{
+    background: url(/icons/111-search.png) center left no-repeat;
+}
+/*
+.wode1-2 p{
+    font-size: 20px;
+    height: 30px;
+    padding-top: 0px;
+}
+*/
+.wode1-1{
+    padding-top: 10px;
+    position: relative;
+}
+
+
+
+

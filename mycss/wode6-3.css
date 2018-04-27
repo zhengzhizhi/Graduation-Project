@@ -1,0 +1,105 @@
+a{
+    color: dimgrey;
+}
+a:hover{
+    color: #5db048;
+}
+.wode1{
+    text-align: center;
+    height: 585px;
+/*    background-color: white;*/
+/*    border: 1px solid #7dca67;*/
+    border-radius: 3%;
+    margin: 10px;
+    position: relative;
+}
+.wode1 img{
+    margin-top: 30px;
+}
+.wode1 p{
+    color: dimgrey;
+    font-size: 15px;
+    margin: 7px;
+}
+.wode1-1{
+    padding-top: 10px;
+    position: relative;
+}
+.wode1-1 li{
+    height: 30px;
+    font-size: 15px;
+    border-bottom: 1px solid #EEEEEE;
+    margin-top: 25px;
+} 
+.wode1-1 li p:nth-child(2){
+    position: absolute;
+    left: 40px;
+    display: inline-block;
+}
+.wode1-1 li p:nth-child(4){
+    position: absolute;
+    right: 30px;
+    display: inline-block;
+}
+.wode1-1 li img:nth-child(1){
+    margin-top:5px;
+    margin-left: 15px;
+    float: left;
+}
+.wode1-1 li img:nth-child(3){
+    margin-top:5px;
+    margin-right: 15px;
+    float: right;
+}
+
+
+li:after{
+  	content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+  }
+
+label{
+  	display: block;
+  	height:50px;
+    width: 100%  
+  }
+#xuanding1,#xuanding2{
+  	border: 0px;
+    background: none;
+    display: none;
+  }
+.tuoyuan{
+  	height: 20px;
+  	width: 40px;
+  	border-radius: 30px;
+  	background-color: darkgrey;
+  	position: relative;
+  	float: right;
+/*  	margin-top: 20px;*/
+
+
+  }
+.yuan{
+  	height: 20px;
+  	width: 20px;
+  	border-radius: 25px;
+  	background-color: white;
+  	position: absolute;
+  	left: 1px;
+  }
+  input[type="checkbox"]:checked + label{
+  }
+  input[type="checkbox"]:checked + label .tuoyuan{
+  	background-color: #5db048;
+  }
+  input[type="checkbox"]:checked + label .tuoyuan .yuan{
+  	left:19px;
+  }
+}
+
+
+

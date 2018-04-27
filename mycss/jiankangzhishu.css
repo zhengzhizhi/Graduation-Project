@@ -1,0 +1,68 @@
+body{
+  background-color: #e5e2e2;
+}
+.title{
+    width: 1300px;
+    height: 50px;
+    font: 45px 'Open Sans', sans-serif;
+    text-align: center;
+    color: #5db048;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #7dca67;
+}
+
+.title img{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+.fenxi{
+    text-align: center;
+}
+.fenxi p{
+    width: 1300px;
+    font-size: 25px;
+    color: #7d7c7c;
+    position: absolute;
+    top: 90%;
+}
+@media (max-width: 400px) {
+    .title{
+    width: 700px;
+    height: 50px;
+    font: 45px 'Open Sans', sans-serif;
+    text-align: center;
+    color: #5db048;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #7dca67;
+}
+    .fenxi p{
+    padding-left: 10px;
+    padding-right: 10px;    
+    width: 700px;
+    font-size: 35px;
+    color: #7d7c7c;
+    position: absolute;
+    top: 90%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
